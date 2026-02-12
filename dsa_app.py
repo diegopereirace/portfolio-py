@@ -305,10 +305,10 @@ def dsa_filtros_sidebar(df):
     # Cria um "expander" para informações de suporte
     # 'expanded=False' garante que ele comece fechado
     with st.sidebar.expander("🆘 Suporte / Fale conosco", expanded = False):
-        st.write("Se tiver dúvidas envie mensagem para suporte@datascienceacademy.com.br")
+        st.write("Se tiver dúvidas sobre este projeto, entre em contato com o desenvolvedor.")
     
     # Adiciona uma legenda de rodapé com 'st.sidebar.caption'
-    st.sidebar.caption("Dashboard Desenvolvido no Mini-Projeto 10 do Curso Gratuito de Python da Data Science Academy.")
+    st.sidebar.caption("Dashboard desenvolvido como projeto pessoal em Python para portfólio.")
 
     # Retorna o DataFrame recém-filtrado para ser usado no corpo principal da página
     return df_dsa_filtrado
@@ -668,8 +668,8 @@ def datascienceacademy_mp10():
     # --- Início: Layout da Página Principal ---
     
     # Define os títulos e a descrição que aparecem no corpo principal do app
-    st.title("Data Science Academy")
-    st.title("Curso Gratuito de Linguagem Python - Mini-Projeto 10")
+    st.title("Dashboard de Vendas")
+    st.title("Projeto em Python para Portfólio")
     st.title("📊 Data App Para Dashboard Interativo de Sales Analytics")
     st.subheader("Com Banco de Dados SQLite e Streamlit")
     st.write("Navegue pelo dashboard e use os filtros na barra lateral para diferentes visualizações. Os dados podem ser exportados para formato CSV e PDF.")
@@ -852,7 +852,7 @@ def datascienceacademy_mp10():
         - **Visualização:** Plotly Express e tema Dark no Streamlit.
         - **Relatórios:** Geração de PDF com FPDF (compatível com Latin-1).
         - **Performance:** Cache de dados (`@st.cache_data`).
-        - **DSA:** Para conhecer mais sobre os cursos visite: www.datascienceacademy.com.br.
+        - **Projeto:** Desenvolvido como estudo prático em Python para portfólio.
         """)
 
 
