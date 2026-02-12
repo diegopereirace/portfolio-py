@@ -1,4 +1,4 @@
-# Mini-Projeto 10 - Data App Para Dashboard Interativo de Sales Analytics em Python com Streamlit
+# Data App Para Dashboard Interativo de Sales Analytics em Python com Streamlit
 
 # Abra o terminal ou prompt de comando, navegue até a pasta com os arquivos e execute o comando abaixo para criar um ambiente virtual:
 
