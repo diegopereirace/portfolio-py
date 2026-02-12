@@ -671,7 +671,7 @@ def run_sales_dashboard_app():
     # Define os títulos e a descrição que aparecem no corpo principal do app
     st.title("Dashboard de Vendas")
     st.title("Projeto em Python para Portfólio")
-    st.title("📊 Data App Para Dashboard Interativo de Sales Analytics")
+    st.title("Data App Para Dashboard Interativo de Sales Analytics")
     st.subheader("Com Banco de Dados SQLite e Streamlit")
     st.write("Navegue pelo dashboard e use os filtros na barra lateral para diferentes visualizações. Os dados podem ser exportados para formato CSV e PDF.")
     st.markdown("---")
