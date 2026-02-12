@@ -668,6 +668,26 @@ def run_sales_dashboard_app():
 
     # --- Início: Layout da Página Principal ---
     
+    # Destaque do desenvolvedor - Responsivo para Desktop e Mobile
+    st.markdown("""
+    <div style="
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    ">
+        <h1 style="
+            color: white;
+            margin: 0;
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: 1px;
+        ">DIEGO PEREIRA - DEV</h1>
+    </div>
+    """, unsafe_allow_html=True)
+    
     # Define os títulos e a descrição que aparecem no corpo principal do app
     st.title("Dashboard de Vendas")
     st.title("Projeto em Python para Portfólio")
