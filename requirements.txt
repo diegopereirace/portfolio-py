@@ -1,15 +1,16 @@
-# Bibliotecas essenciais para o App
+# Bibliotecas Principais
 streamlit
 pandas
 numpy
+
+# Geração de PDF (Necessária para a linha 18 do seu código)
+fpdf2
+
+# Visualização e Gráficos
 plotly
 matplotlib
 seaborn
-pillow
 
-# Utilitários de sistema e visualização
-GitPython
-rich
-markdown-it-py
-pygments
+# Utilitários e Requisições
 requests
+GitPython
