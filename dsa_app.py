@@ -223,7 +223,7 @@ def dsa_filtros_sidebar(df):
 
     """
     Cria todos os widgets da sidebar (menu lateral).
-	1. Exibe um banner/link para retornar ao site principal.
+	1. Exibe um banner com o título do dashboard.
     2. Cria os filtros de data, região, categoria e produto.
     3. Aplica os filtros ao DataFrame.
     4. Retorna o DataFrame filtrado.
@@ -238,12 +238,9 @@ def dsa_filtros_sidebar(df):
     # 'unsafe_allow_html=True' é necessário para renderizar o bloco HTML/CSS customizado
     st.sidebar.markdown(
         """
-        <a href="https://diegopereirace.com.br" target="_self" style="text-decoration:none;">
-            <div style="background-color:#00CC96; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 15px;">
-                <h3 style="color:white; margin:0; font-weight:bold;">⬅ Voltar para o site anterior</h3>
-                <p style="color:white; margin:4px 0 0 0; font-size:0.85rem;">Clique aqui para retornar ao site principal de Diego Pereira.</p>
-            </div>
-        </a>
+        <div style="background-color:#00CC96; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 15px;">
+            <h3 style="color:white; margin:0; font-weight:bold;">Dashboard de Vendas</h3>
+        </div>
         """,
         unsafe_allow_html=True
     )
