@@ -684,7 +684,9 @@ def run_sales_dashboard_app():
             font-size: clamp(1.5rem, 5vw, 2.5rem);
             font-weight: 700;
             letter-spacing: 1px;
-        ">DIEGO PEREIRA - DEV</h1>
+        ">
+            <a href="https://diegopereirace.com.br/">DIEGO PEREIRA - DEV</a>
+        </h1>
     </div>
     """, unsafe_allow_html=True)
     
