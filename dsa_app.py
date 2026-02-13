@@ -704,7 +704,7 @@ def run_sales_dashboard_app():
             gap: 10px;
         ">
             {favicon_img_html}
-            <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">DIEGO PEREIRA - DEV</a>
+            <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">Diego Pereira - Dev</a>
         </h1>
     </div>
     """, unsafe_allow_html=True)
