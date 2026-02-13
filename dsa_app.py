@@ -671,7 +671,7 @@ def run_sales_dashboard_app():
     # Destaque do desenvolvedor - Responsivo para Desktop e Mobile
     st.markdown("""
     <div style="
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: rgba(5, 150, 105, 0.3);
         padding: 0 15px;
         border-radius: 10px;
         text-align: center;
