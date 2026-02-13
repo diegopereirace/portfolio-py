@@ -672,11 +672,11 @@ def run_sales_dashboard_app():
     st.markdown("""
     <div style="
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 20px 15px;
+        padding: 0 15px;
         border-radius: 10px;
         text-align: center;
         margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 6px rgba(5, 150, 105, 0.3);
     ">
         <h1 style="
             color: white;
