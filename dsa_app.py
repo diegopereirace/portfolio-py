@@ -878,25 +878,13 @@ def run_sales_dashboard_app():
     st.markdown("---")
     
     # Seção sempre visível com informações sobre o app em um card moderno
-    st.markdown("""
-    <div style="
-        background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
-        border: 2px solid #00D084;
-        border-radius: 12px;
-        padding: 30px;
-        margin: 20px 0;
-        box-shadow: 0 8px 24px rgba(0, 208, 132, 0.15);
-    ">
+    card_html = """
+    <div style="background: linear-gradient(135deg, #1F2937 0%, #111827 100%); border: 2px solid #00D084; border-radius: 12px; padding: 30px; margin: 20px 0; box-shadow: 0 8px 24px rgba(0, 208, 132, 0.15);">
         <h3 style="color: #00D084; margin: 0 0 20px 0; font-size: 24px; font-weight: bold;">Sobre Esta Data App</h3>
-        
-        <p style="color: #E5E7EB; font-size: 16px; margin-bottom: 20px; line-height: 1.6;">
-            Este dashboard combina as melhores práticas de visualização e manipulação de dados.
-        </p>
-        
+        <p style="color: #E5E7EB; font-size: 16px; margin-bottom: 20px; line-height: 1.6;">Este dashboard combina as melhores práticas de visualização e manipulação de dados.</p>
         <div style="background: rgba(0, 208, 132, 0.1); border-left: 4px solid #00D084; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
             <p style="color: #00D084; margin: 0; font-weight: 600;">Recursos Integrados:</p>
         </div>
-        
         <ul style="color: #D1D5DB; font-size: 15px; line-height: 2; margin: 0; padding-left: 20px;">
             <li><span style="color: #00D084; font-weight: 600;">Engine:</span> Python + Streamlit + SQLite</li>
             <li><span style="color: #00D084; font-weight: 600;">Visualização:</span> Plotly Express e tema Dark no Streamlit</li>
@@ -905,7 +893,8 @@ def run_sales_dashboard_app():
             <li><span style="color: #00D084; font-weight: 600;">Projeto:</span> Desenvolvido como estudo prático em Python para portfólio</li>
         </ul>
     </div>
-    """, unsafe_allow_html=True)
+    """
+    st.markdown(card_html, unsafe_allow_html=True)
 
 
 # --- Bloco 10: Ponto de Entrada da Execução ---
