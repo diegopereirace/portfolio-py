@@ -14,6 +14,9 @@ import pandas as pd  # Para manipulação e análise de dados (DataFrames)
 import plotly.express as px  # Para criação de gráficos interativos
 import streamlit as st       # A biblioteca principal para criar a Data App
 
+# Utilitário para trabalhar com imagens em base64 (ex: favicon inline no HTML)
+import base64
+
 # Importa a biblioteca de geração de PDF e seus componentes
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos  # Enumerações para posicionamento no PDF
@@ -668,7 +671,21 @@ def run_sales_dashboard_app():
     # --- Início: Layout da Página Principal ---
     
     # Destaque do desenvolvedor - Responsivo para Desktop e Mobile
-    st.markdown("""
+    # Carrega o favicon como base64 para exibir dentro do HTML personalizado
+    favicon_img_html = ""
+    try:
+        with open("favicon.png", "rb") as f:
+            favicon_base64 = base64.b64encode(f.read()).decode("utf-8")
+        favicon_img_html = (
+            f'<img src="data:image/png;base64,{favicon_base64}" '
+            f'alt="Logo Diego Pereira" '
+            f'style="height: 36px; width: 36px; border-radius: 8px;" />'
+        )
+    except FileNotFoundError:
+        # Se o arquivo não for encontrado, apenas não exibe a imagem
+        favicon_img_html = ""
+
+    st.markdown(f"""
     <div style="
         background: rgba(5, 150, 105, 0.3);
         padding: 0 15px;
@@ -686,7 +703,7 @@ def run_sales_dashboard_app():
             align-items: center;
             gap: 10px;
         ">
-            <img src="favicon.png" alt="Logo Diego Pereira" style="height: 36px; width: 36px; border-radius: 8px;">
+            {favicon_img_html}
             <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">DIEGO PEREIRA - DEV</a>
         </h1>
     </div>
