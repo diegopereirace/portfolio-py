@@ -9,10 +9,11 @@ jobs:
   ping-app:
     runs-on: ubuntu-latest
     steps:
-      - name: Fazendo um GET request no Streamlit
+      - name: Ping Automático
         run: |
-          # O parâmetro -I apenas baixa o cabeçalho (mais leve)
-          # O parâmetro -k ignora problemas de SSL temporários
-          # O parâmetro -f garante que falhe se o site estiver fora, mas vamos debugar
-          curl -I -k -s https://portfolio-py-c45uvaa8fvasrmvlxrcxs.streamlit.app/
-          echo "Ping realizado. Verifique os logs acima se houver erro HTTP."
+          # -L: Segue redirecionamentos
+          # -k: Ignora erros de SSL/Certificado (comum em subdomínios)
+          # -s: Modo silencioso
+          # || true: Garante que o workflow não fique vermelho se o site demorar
+          curl -Lks https://portfolio-py-c45uvaa8fvasrmvlxrcxs.streamlit.app/ || true
+          echo "Processo de ping finalizado."
