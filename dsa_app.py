@@ -677,6 +677,28 @@ def run_sales_dashboard_app():
         # Se o arquivo não for encontrado, apenas não exibe a imagem
         favicon_img_html = ""
 
+    # Botão de volta para o site principal
+    st.markdown("""
+    <div style="display: flex; justify-content: flex-start; margin-bottom: 20px;">
+        <a href="https://diegopereirace.com.br/" target="_blank" style="
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: rgba(0, 208, 132, 0.2);
+            border: 1px solid #00D084;
+            border-radius: 6px;
+            color: #00D084;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        " onmouseover="this.style.background='rgba(0, 208, 132, 0.3)'; this.style.boxShadow='0 0 12px rgba(0, 208, 132, 0.3)';" onmouseout="this.style.background='rgba(0, 208, 132, 0.2)'; this.style.boxShadow='none';">
+            < Voltar ao Site
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+
     st.markdown(f"""
     <div style="
         background: rgba(0, 208, 132, 0.15);
