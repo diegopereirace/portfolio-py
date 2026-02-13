@@ -11,9 +11,6 @@ jobs:
     steps:
       - name: Ping Automático
         run: |
-          # -L: Segue redirecionamentos
-          # -k: Ignora erros de SSL/Certificado (comum em subdomínios)
-          # -s: Modo silencioso
-          # || true: Garante que o workflow não fique vermelho se o site demorar
-          curl -Lks https://portfolio-py-c45uvaa8fvasrmvlxrcxs.streamlit.app/ || true
-          echo "Processo de ping finalizado."
+          # URL corrigida para evitar o erro de 'App does not exist'
+          curl -Lks https://portfolio-py-c45uvaal8fvasrmvlxrcxs.streamlit.app/ || true
+          echo "Ping realizado na URL correta."
