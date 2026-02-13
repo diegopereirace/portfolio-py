@@ -679,24 +679,26 @@ def run_sales_dashboard_app():
 
     st.markdown(f"""
     <div style="
-        background: rgba(5, 150, 105, 0.3);
-        padding: 0 15px;
+        background: rgba(0, 208, 132, 0.15);
+        padding: 20px 15px;
         border-radius: 10px;
         text-align: center;
         margin-bottom: 20px;
+        border-left: 5px solid #00D084;
     ">
         <h1 style="
             color: white;
             margin: 0;
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
-            font-weight: 700;
-            letter-spacing: 1px;
-            display: inline-flex;
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            display: flex;
             align-items: center;
-            gap: 10px;
+            justify-content: center;
+            gap: 15px;
         ">
             {favicon_img_html}
-            <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">Diego Pereira - Dev</a>
+            <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">DIEGO PEREIRA<span style="color: #00D084; font-weight: 700;">{dev}</span></a>
         </h1>
     </div>
     """, unsafe_allow_html=True)
