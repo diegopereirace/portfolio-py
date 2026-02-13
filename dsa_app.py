@@ -684,14 +684,14 @@ def run_sales_dashboard_app():
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 10px 20px;
+            padding: 5px 10px;
             background: rgba(0, 208, 132, 0.2);
             border: 1px solid #00D084;
             border-radius: 6px;
             color: #00D084;
             text-decoration: none;
             font-weight: 600;
-            font-size: 14px;
+            font-size: 12px;
             transition: all 0.3s ease;
         " onmouseover="this.style.background='rgba(0, 208, 132, 0.3)'; this.style.boxShadow='0 0 12px rgba(0, 208, 132, 0.3)';" onmouseout="this.style.background='rgba(0, 208, 132, 0.2)'; this.style.boxShadow='none';">
             < Voltar ao Site
