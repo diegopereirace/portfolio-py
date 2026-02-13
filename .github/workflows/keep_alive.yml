@@ -2,9 +2,8 @@ name: Keep Streamlit App Alive
 
 on:
   schedule:
-    # Executa todos os dias às 12:00 UTC (09:00 no horário de Fortaleza)
     - cron: '0 12 * * *'
-  workflow_dispatch: # Permite rodar manualmente no GitHub para testar
+  workflow_dispatch: 
 
 jobs:
   ping-app:
@@ -12,5 +11,8 @@ jobs:
     steps:
       - name: Fazendo um GET request no Streamlit
         run: |
-          curl -sL https://portfolio-py-c45uvaa8fvasrmvlxrcxs.streamlit.app > /dev/null
-          echo "Ping no Streamlit realizado com sucesso!"
+          # O parâmetro -I apenas baixa o cabeçalho (mais leve)
+          # O parâmetro -k ignora problemas de SSL temporários
+          # O parâmetro -f garante que falhe se o site estiver fora, mas vamos debugar
+          curl -I -k -s https://portfolio-py-c45uvaa8fvasrmvlxrcxs.streamlit.app/
+          echo "Ping realizado. Verifique os logs acima se houver erro HTTP."
