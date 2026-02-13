@@ -682,7 +682,11 @@ def run_sales_dashboard_app():
             font-size: clamp(1.5rem, 5vw, 2.5rem);
             font-weight: 700;
             letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
         ">
+            <img src="favicon.png" alt="Logo Diego Pereira" style="height: 36px; width: 36px; border-radius: 8px;">
             <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">DIEGO PEREIRA - DEV</a>
         </h1>
     </div>
