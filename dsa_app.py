@@ -887,17 +887,14 @@ def run_sales_dashboard_app():
         margin: 20px 0;
         box-shadow: 0 8px 24px rgba(0, 208, 132, 0.15);
     ">
-        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-            <span style="font-size: 28px;">ℹ️</span>
-            <h3 style="color: #00D084; margin: 0; font-size: 24px; font-weight: bold;">Sobre Esta Data App</h3>
-        </div>
+        <h3 style="color: #00D084; margin: 0 0 20px 0; font-size: 24px; font-weight: bold;">Sobre Esta Data App</h3>
         
         <p style="color: #E5E7EB; font-size: 16px; margin-bottom: 20px; line-height: 1.6;">
             Este dashboard combina as melhores práticas de visualização e manipulação de dados.
         </p>
         
         <div style="background: rgba(0, 208, 132, 0.1); border-left: 4px solid #00D084; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
-            <p style="color: #00D084; margin: 0; font-weight: 600;">✓ Recursos Integrados:</p>
+            <p style="color: #00D084; margin: 0; font-weight: 600;">Recursos Integrados:</p>
         </div>
         
         <ul style="color: #D1D5DB; font-size: 15px; line-height: 2; margin: 0; padding-left: 20px;">
