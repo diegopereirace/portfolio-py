@@ -302,14 +302,6 @@ def dsa_filtros_sidebar(df):
 
     # --- Rodapé da Sidebar ---
     
-    # Adiciona uma linha horizontal para separar os filtros do rodapé
-    st.sidebar.markdown("---")
-
-    # Cria um "expander" para informações de suporte
-    # 'expanded=False' garante que ele comece fechado
-    with st.sidebar.expander("🆘 Suporte / Fale conosco", expanded = False):
-        st.write("Se tiver dúvidas sobre este projeto, entre em contato com o desenvolvedor.")
-    
     # Adiciona uma legenda de rodapé com 'st.sidebar.caption'
     st.sidebar.caption("Dashboard desenvolvido como projeto pessoal em Python para portfólio.")
 
