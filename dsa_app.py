@@ -676,7 +676,6 @@ def run_sales_dashboard_app():
         border-radius: 10px;
         text-align: center;
         margin-bottom: 20px;
-        box-shadow: 0 4px 6px rgba(5, 150, 105, 0.3);
     ">
         <h1 style="
             color: white;
@@ -685,7 +684,7 @@ def run_sales_dashboard_app():
             font-weight: 700;
             letter-spacing: 1px;
         ">
-            <a href="https://diegopereirace.com.br/">DIEGO PEREIRA - DEV</a>
+            <a href="https://diegopereirace.com.br/?referer=portfolio-py" style="color: white; text-decoration: none;">DIEGO PEREIRA - DEV</a>
         </h1>
     </div>
     """, unsafe_allow_html=True)
