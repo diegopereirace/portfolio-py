@@ -240,7 +240,7 @@ def dsa_filtros_sidebar(df):
     # 'unsafe_allow_html=True' é necessário para renderizar o bloco HTML/CSS customizado
     st.sidebar.markdown(
         """
-        <div style="background-color:#00CC96; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 15px;">
+        <div style="background-color:#00D084; padding: 10px; border-radius: 5px; text-align: center; margin-bottom: 15px;">
             <h3 style="color:white; margin:0; font-weight:bold;">Dashboard de Vendas</h3>
         </div>
         """,
@@ -367,7 +367,7 @@ def dsa_renderiza_cards_kpis(df):
         <div class="metric-card">
             <h3>Receita Total</h3>
             <h2>R$ {total_faturamento:,.0f}</h2>
-            <div class="delta" style="color: {'#4CAF50' if delta_rev > 0 else '#FF5252'}">
+            <div class="delta" style="color: {'#00D084' if delta_rev > 0 else '#FF5252'}">
                 {delta_rev:+.1f}% vs meta
             </div>
         </div>
@@ -559,11 +559,11 @@ def dsa_set_custom_theme():
 
     # --- 1. Definição das Cores do Tema ---
 
-    # Cores usadas nos estilos CSS abaixo
-    card_bg_color = "#262730"  # Fundo cinza escuro para os cards de KPI
-    text_color = "#FAFAFA"     # Cor do texto principal (branco)
-    gold_color = "#E1C16E"     # Cor bege-ouro para os filtros selecionados
-    dark_text = "#1E1E1E"      # Cor de texto escura para usar sobre o fundo bege-ouro
+    # Cores usadas nos estilos CSS abaixo (Esquema diegopereirace.com.br)
+    card_bg_color = "#1F2937"  # Fundo cinza escuro moderno para os cards de KPI
+    text_color = "#FFFFFF"     # Cor do texto principal (branco puro)
+    gold_color = "#00D084"     # Cor verde ciano para os filtros selecionados
+    dark_text = "#111827"      # Cor de texto escura para usar sobre a cor verde
     
     # --- 2. Criação do Bloco de Estilo CSS ---
 
@@ -586,7 +586,7 @@ def dsa_set_custom_theme():
             background-color: {card_bg_color};
             padding: 20px;
             border-radius: 10px;
-            border: 1px solid #444;
+            border: 1px solid #374151;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Sombra sutil */
             text-align: center;
             margin-bottom: 10px; /* Espaçamento inferior */
@@ -596,7 +596,7 @@ def dsa_set_custom_theme():
         .metric-card h3 {{
             margin: 0;
             font-size: 1.2rem;
-            color: #AAA; /* Cinza claro */
+            color: #9CA3AF; /* Cinza claro */
             font-weight: normal;
         }}
 
@@ -611,7 +611,7 @@ def dsa_set_custom_theme():
         /* Estilo do texto 'delta' (ex: "+5.0% vs meta") */
         .metric-card .delta {{
             font-size: 0.9rem;
-            color: #4CAF50; /* Verde (padrão) */
+            color: #00D084; /* Verde ciano (diegopereirace.com.br) */
             margin-top: 5px;
         }}
                 
