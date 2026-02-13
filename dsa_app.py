@@ -22,12 +22,11 @@ from fpdf.enums import XPos, YPos  # Enumerações para posicionamento no PDF
 from datetime import datetime, date, timedelta  # Para manipular datas e calcular períodos
 
 # Configuração Inicial da Aplicação Streamlit
-
 st.set_page_config(
     page_title="Dashboard de Vendas",  # Título que aparece na aba do navegador
-    page_icon=":100:",                  # Ícone (emoji) que aparece na aba do navegador
-    layout="wide",                      # Define o layout da página para usar a largura total da tela
-    initial_sidebar_state="expanded",   # Garante que a sidebar (menu lateral) comece aberta
+    page_icon="favicon.png",           # Ícone personalizado da aba/navegador
+    layout="wide",                     # Define o layout da página para usar a largura total da tela
+    initial_sidebar_state="expanded",  # Garante que a sidebar (menu lateral) comece aberta
 )
 
 
