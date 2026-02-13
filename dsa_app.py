@@ -706,7 +706,7 @@ def run_sales_dashboard_app():
     # Botão de volta para o site principal
     st.markdown("""
     <div style="display: flex; justify-content: flex-start; margin-bottom: 20px;">
-        <a href="https://diegopereirace.com.br/" target="_self" style="
+        <a href="https://diegopereirace.com.br/" target="_blank" style="
             display: inline-flex;
             align-items: center;
             gap: 8px;
