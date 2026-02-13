@@ -877,17 +877,17 @@ def run_sales_dashboard_app():
     # --- Rodapé da Página Principal ---
     st.markdown("---")
     
-    # Caixa "expander" (sanfona) com informações sobre o app
-    with st.expander("ℹ️ Sobre Esta Data App", expanded=False):
-        st.info("Este dashboard combina as melhores práticas de visualização e manipulação de dados.")
-        st.markdown("""
-        **Recursos Integrados:**
-        - **Engine:** Python + Streamlit + SQLite.
-        - **Visualização:** Plotly Express e tema Dark no Streamlit.
-        - **Relatórios:** Geração de PDF com FPDF (compatível com Latin-1).
-        - **Performance:** Cache de dados (`@st.cache_data`).
-        - **Projeto:** Desenvolvido como estudo prático em Python para portfólio.
-        """)
+    # Seção sempre visível com informações sobre o app
+    st.markdown("###Sobre Esta Data App")
+    st.info("Este dashboard combina as melhores práticas de visualização e manipulação de dados.")
+    st.markdown("""
+    **Recursos Integrados:**
+    - **Engine:** Python + Streamlit + SQLite.
+    - **Visualização:** Plotly Express e tema Dark no Streamlit.
+    - **Relatórios:** Geração de PDF com FPDF (compatível com Latin-1).
+    - **Performance:** Cache de dados (`@st.cache_data`).
+    - **Projeto:** Desenvolvido como estudo prático em Python para portfólio.
+    """)
 
 
 # --- Bloco 10: Ponto de Entrada da Execução ---
