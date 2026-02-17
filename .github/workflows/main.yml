@@ -1,3 +1,13 @@
-- name: Keep Space Alive
-  run: |
-    curl -I https://diegopereirace-portfolio-py.hf.space
+name: Keep Space Alive
+
+on:
+  schedule:
+    - cron: "*/15 * * * *" # Executa a cada 15 minutos
+  workflow_dispatch: # Permite que você rode manualmente para testar
+
+jobs:
+  ping_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Ping
+        run: curl -I https://diegopereirace-portfolio-py.hf.space
